@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Registration</title>
+    <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Membership Registration</h1>
+        <form id="registrationForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="membershipType">Membership Type:</label>
+            <select id="membershipType" name="membershipType" required>
+                <option value="">Select...</option>
+                <option value="basic">Virus & threat protection</option>
+                <option value="premium">Virus, threat & Tamper protection</option>
+                <option value="vip">Full System security services (includes all protection services) *need to download the application* </option>
+            </select>
+
+            
+            <label for="payment-method">Payment Method:</label>
+                <select id="payment-method" name="payment-method">
+                    <option value="credit-card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bitcoin">Bitcoin</option>
+                    <option value="UPI">UPI</option>
+                </select><br><br>
+                <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+            <br><br>
+                
+
+        </section>
+        <section id="subscription-data" type="submit">
+           
+            <table id="subscription-data-table">
+               
+                <tbody id="subscription-data-table-body">
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="script.js"></script>
+
+
+            <button type="submit" href="script.js">Register</button>
+        </form>
+    </div>
+</body>
+</html>
